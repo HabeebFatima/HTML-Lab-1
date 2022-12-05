@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header h1 {
+            text-align: center;
+            font-weight: bold;
+            background-color: red;
+            width: 100%;
+            height: 40%;
+            float: right;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            margin: 0%;
+            height: auto;
+        }
+
+        .menu {
+            margin: 0%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .menu li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* .dropdown li {
+            display: block;
+            padding: auto;
+        } */
+
+        .menu li:nth-child(2):hover #dropdown1,
+        .menu li:nth-child(3):hover #dropdown2 {
+            display: block;
+        }
+
+        .menu li:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #dropdown1,
+        #dropdown2 {
+            position: absolute;
+            width: auto;
+            display: none;
+            max-width: 150px;
+            top: 80px;
+            background-color: whitesmoke;
+            padding: 0%;
+            cursor: pointer;
+        }
+
+        #dropdown1:hover,
+        #dropdown2:hover {
+            color: whitesmoke;
+            font-size: 18px;
+            margin: 0px;
+            float: none;
+            box-sizing: border-box;
+            position: relative;
+            display: list-item;
+            background-color: rgb(186, 223, 205);
+
+
+        }
+
+        #dropdown1 li,
+        #dropdown2 li {
+            background-color: whitesmoke;
+            margin: 0px;
+        }
+
+        #dropdown1 li a,
+        #dropdown2 li a {
+            color: blue;
+            font-size: 18px;
+        }
+
+        #dropdown1 li a li:hover,
+        #dropdown2 li a li:hover {
+            background-color: goldenrod;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Demo of Dropdown</h1>
+        <nav id="navigate">
+            <ul class="menu">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a>
+                    <ul id="dropdown1">
+                        <li><a href="#">DD_Link1</a></li>
+                        <li><a href="#">DD_Link2</a></li>
+                        <li><a href="#">DD_Link3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link 3</a>
+                    <ul id="dropdown2">
+                        <li><a href="#">EE_Link1</a></li>
+                        <li><a href="#">EE_Link2</a></li>
+                        <li><a href="#">EE_Link3</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+        </nav>
+</body>
+
+
+
+</HTML>
